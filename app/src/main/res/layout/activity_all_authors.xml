@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".activities.Admin.AuthorsActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_mentor_chat_recycler_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#22BEA9">
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="@color/white"
+                android:padding="7dp"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                tools:ignore="UseAppTint"
+                android:focusable="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="50dp"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="Authors"
+                android:textColor="#FFFFFF"
+                />
+            <ImageView
+                android:id="@+id/addAuthor"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_baseline_add_circle_24"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/white"
+                app:tint="@color/white" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:gravity="center"
+            android:id="@+id/tvMsg"
+            android:text="no records found"/>
+        <!-- RECYCLER VIEW -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ListMyAuthors"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

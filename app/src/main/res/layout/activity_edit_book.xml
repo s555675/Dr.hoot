@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E5E5E5"
+    tools:context=".activities.Admin.BooksActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:id="@+id/activity_mentor_chat_recycler_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/primary_dark">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Modify Book"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Name: "/>
+        <EditText
+            android:id="@+id/bookName"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="book name"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:maxLines="1"
+            android:textColorHint="#9E9E9E"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Short Desc: "/>
+            <EditText
+                android:id="@+id/etShortDesc"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="write short description"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:maxLines="1"
+                android:textColorHint="#9E9E9E"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Long Desc: "/>
+            <EditText
+                android:id="@+id/etLongDesc"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="long description"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textColorHint="#9E9E9E"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Quantity: "/>
+            <EditText
+                android:id="@+id/etQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="enter no of books"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textColorHint="#9E9E9E" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Published On: "/>
+-        <EditText
+            android:id="@+id/etPublished"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:hint="dd-mm-yyyy"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:textColor="#000000"
+            android:textColorHint="#9E9E9E" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnUpdateCust"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:background="@color/primary"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

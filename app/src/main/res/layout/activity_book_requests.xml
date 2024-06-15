@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".activities.Admin.MyUsersActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_mentor_chat_recycler_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#22BEA9">
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:tint="@color/white"
+                android:padding="7dp"
+                android:clickable="true"
+                android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+                tools:ignore="UseAppTint"
+                android:focusable="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:text="Book Requests"
+                android:textColor="#FFFFFF"
+                />
+        </LinearLayout>
+        <!-- RECYCLER VIEW -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ListBooksRequests"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvMsg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:gravity="center"
+            android:text="no records found!"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

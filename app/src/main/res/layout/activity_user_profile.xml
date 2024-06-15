@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingTop="7dp"
+        android:background="@drawable/rectangle_round"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="@color/white"
+            android:padding="7dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            tools:ignore="UseAppTint"
+            android:focusable="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Labour Details"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/user_item_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="9dp"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/parent_layout">
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Name"
+                android:textSize="30dp"
+                android:textColor="@color/secondary" />
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:padding="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableTint="@color/primary_dark"
+                    android:drawableLeft="@drawable/ic_baseline_email_24"
+                    android:text="email"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/gray" />
+        <TextView
+            android:id="@+id/tvMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:drawableTint="@color/primary_dark"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+            android:text="123"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/gray" />
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:text="Age: 1"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/gray" />
+        <TextView
+            android:id="@+id/tvGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:text="Gender: Male"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/gray" />
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="10dp"
+            android:text="Address: "
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/gray" />
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="211dp"
+            android:layout_height="45dp"
+            android:background="@color/primary"
+            android:text="Back"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintVertical_bias="0.916" />
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

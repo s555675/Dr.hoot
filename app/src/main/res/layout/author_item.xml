@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="12dp"
+    android:padding="7dp"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    android:clickable="true"
+    android:id="@+id/authorItemCard"
+    android:foreground="?attr/selectableItemBackground"
+    android:focusable="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/parent_layout">
+
+        <ImageView
+            android:id="@+id/auth_item_image"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="7dp"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:id="@+id/auth_view_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="9dp"
+            android:maxLines="1"
+            android:text="35yrs old"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/cardview_dark_background" />
+        <TextView
+            android:id="@+id/view_auth_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="40dp"
+            android:maxLines="1"
+            android:text="Author Name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/primary" />
+        <RatingBar
+            android:id="@+id/auth_view_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:numStars="5"
+            android:max="5"
+            android:scaleX=".4"
+            android:scaleY=".4"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="50dp"
+            android:rating= "5.0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:progressTint="@color/secondary_dark"
+            android:stepSize="1"/>
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_chevron_right_24"
+                android:tint="#BFBDBD"
+                android:alpha="0.7"
+                tools:ignore="UseAppTint"
+                />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

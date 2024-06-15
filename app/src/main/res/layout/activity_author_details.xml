@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.Users.DashboardUserActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ScrollViewSize">
+    <LinearLayout
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:paddingTop="7dp"
+        android:background="@drawable/rectangle_round"
+        android:elevation="6dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tint="@color/white"
+            android:padding="7dp"
+            android:clickable="true"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            tools:ignore="UseAppTint"
+            android:focusable="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author Details"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/user_item_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="9dp"
+            app:srcCompat="@drawable/ic_baseline_person_24"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/parent_layout">
+            <TextView
+                android:id="@+id/tvAuthName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="Name"
+                android:textSize="30dp"
+                android:textColor="@color/secondary" />
+                <TextView
+                    android:id="@+id/tvAuthorAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:maxLines="1"
+                    android:layout_gravity="center"
+                    android:textAlignment="center"
+                    android:text="01-01-2023"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/gray" />
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/tvRating"
+                  android:drawableRight="@drawable/ic_baseline_stars_24"
+                  android:drawablePadding="20dp"
+                  android:layout_marginLeft="30dp"
+                  android:layout_marginRight="30dp"
+                  android:layout_gravity="center"
+                  android:text="Rating : 5"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                  android:textAlignment="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:text="Available Books: "/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ListMyBooks"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="no books found!"
+            android:id="@+id/tvNoRecords"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
